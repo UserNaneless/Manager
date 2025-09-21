@@ -1,0 +1,49 @@
+#!/bin/bash
+
+BUILD_TYPE=Debug
+BUILD=1
+REBUILD=0
+
+while [[ $# -gt 0 ]]; do
+    case $1 in
+        --Release)
+            BUILD_TYPE=Release;
+            shift
+            ;;
+        --Debug)
+            BUILD_TYPE=Debug;
+            shift
+            ;;
+        --switch)
+            BUILD=0;
+            shift
+            ;;
+        --rebuild)
+            REBUILD=1;
+            shift
+            ;;
+        *)
+            echo "Unknown parameter passed: $1"
+            exit 1
+            ;;
+    esac
+done
+
+
+BUILD_DIR=build/$BUILD_TYPE
+
+if [ $REBUILD -eq 1 ]; then
+    make -C $BUILD_DIR
+    exit 0
+fi
+
+mkdir -p $BUILD_DIR
+
+cmake -S . -B $BUILD_DIR
+ln -sf $BUILD_DIR/compile_commands.json compile_commands.json
+ln -sf $BUILD_DIR/Bluetooth Bluetooth
+
+if [ $BUILD -eq 1 ]; then
+    make -C $BUILD_DIR
+fi
+

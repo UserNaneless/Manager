@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/naneless/Documents/GitHub/Bluetooth/build/Debug",
+  "command": "/usr/bin/c++ -DQT_BLUETOOTH_LIB -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I/home/naneless/Documents/GitHub/Bluetooth/build/Debug/Bluetooth_autogen/include -I/home/naneless/Documents/GitHub/Bluetooth/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtBluetooth -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtDBus -std=gnu++23 -o CMakeFiles/Bluetooth.dir/Bluetooth_autogen/mocs_compilation.cpp.o -c /home/naneless/Documents/GitHub/Bluetooth/build/Debug/Bluetooth_autogen/mocs_compilation.cpp",
+  "file": "/home/naneless/Documents/GitHub/Bluetooth/build/Debug/Bluetooth_autogen/mocs_compilation.cpp",
+  "output": "CMakeFiles/Bluetooth.dir/Bluetooth_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/home/naneless/Documents/GitHub/Bluetooth/build/Debug",
+  "command": "/usr/bin/c++ -DQT_BLUETOOTH_LIB -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I/home/naneless/Documents/GitHub/Bluetooth/build/Debug/Bluetooth_autogen/include -I/home/naneless/Documents/GitHub/Bluetooth/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtBluetooth -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtDBus -std=gnu++23 -o CMakeFiles/Bluetooth.dir/src/Bluetooth.cpp.o -c /home/naneless/Documents/GitHub/Bluetooth/src/Bluetooth.cpp",
+  "file": "/home/naneless/Documents/GitHub/Bluetooth/src/Bluetooth.cpp",
+  "output": "CMakeFiles/Bluetooth.dir/src/Bluetooth.cpp.o"
+},
+{
+  "directory": "/home/naneless/Documents/GitHub/Bluetooth/build/Debug",
+  "command": "/usr/bin/c++ -DQT_BLUETOOTH_LIB -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I/home/naneless/Documents/GitHub/Bluetooth/build/Debug/Bluetooth_autogen/include -I/home/naneless/Documents/GitHub/Bluetooth/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtBluetooth -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtDBus -std=gnu++23 -o CMakeFiles/Bluetooth.dir/src/BluetoothItem.cpp.o -c /home/naneless/Documents/GitHub/Bluetooth/src/BluetoothItem.cpp",
+  "file": "/home/naneless/Documents/GitHub/Bluetooth/src/BluetoothItem.cpp",
+  "output": "CMakeFiles/Bluetooth.dir/src/BluetoothItem.cpp.o"
+},
+{
+  "directory": "/home/naneless/Documents/GitHub/Bluetooth/build/Debug",
+  "command": "/usr/bin/c++ -DQT_BLUETOOTH_LIB -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I/home/naneless/Documents/GitHub/Bluetooth/build/Debug/Bluetooth_autogen/include -I/home/naneless/Documents/GitHub/Bluetooth/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtBluetooth -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtDBus -std=gnu++23 -o CMakeFiles/Bluetooth.dir/src/BluetoothList.cpp.o -c /home/naneless/Documents/GitHub/Bluetooth/src/BluetoothList.cpp",
+  "file": "/home/naneless/Documents/GitHub/Bluetooth/src/BluetoothList.cpp",
+  "output": "CMakeFiles/Bluetooth.dir/src/BluetoothList.cpp.o"
+},
+{
+  "directory": "/home/naneless/Documents/GitHub/Bluetooth/build/Debug",
+  "command": "/usr/bin/c++ -DQT_BLUETOOTH_LIB -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I/home/naneless/Documents/GitHub/Bluetooth/build/Debug/Bluetooth_autogen/include -I/home/naneless/Documents/GitHub/Bluetooth/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtBluetooth -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtDBus -std=gnu++23 -o CMakeFiles/Bluetooth.dir/src/main.cpp.o -c /home/naneless/Documents/GitHub/Bluetooth/src/main.cpp",
+  "file": "/home/naneless/Documents/GitHub/Bluetooth/src/main.cpp",
+  "output": "CMakeFiles/Bluetooth.dir/src/main.cpp.o"
+}
+]

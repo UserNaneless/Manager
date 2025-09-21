@@ -1,0 +1,20 @@
+QScrollArea {
+    background: transparent;
+}
+
+QScrollArea > QWidget > QWidget {
+    background: transparent;
+}
+
+QScrollArea > QWidget > QScrollBar {
+    background: transparent;
+    width: 4px;
+    border: none;
+}
+
+QScrollArea > QWidget > QScrollBar::handle {
+    background: #598ad9;
+    width: 4px;
+    border: none;
+    border-radius: 4px;
+}

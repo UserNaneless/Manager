@@ -1,0 +1,5 @@
+/home/naneless/Documents/GitHub/Bluetooth/build/Debug/CMakeFiles/Bluetooth.dir
+/home/naneless/Documents/GitHub/Bluetooth/build/Debug/CMakeFiles/edit_cache.dir
+/home/naneless/Documents/GitHub/Bluetooth/build/Debug/CMakeFiles/rebuild_cache.dir
+/home/naneless/Documents/GitHub/Bluetooth/build/Debug/CMakeFiles/Bluetooth_autogen_timestamp_deps.dir
+/home/naneless/Documents/GitHub/Bluetooth/build/Debug/CMakeFiles/Bluetooth_autogen.dir

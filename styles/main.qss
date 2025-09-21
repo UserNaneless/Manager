@@ -1,0 +1,10 @@
+QMainWindow {
+    background-color: rgba(0, 0, 0, 16);
+    border: 2px solid #598ad9;
+    border-radius: 10px;
+}
+
+QMainWindow * {
+    color: #598ad9;
+}
+
