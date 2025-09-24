@@ -1,9 +1,9 @@
 CMakeFiles/Bluetooth.dir/src/main.cpp.o: \
  /home/naneless/Documents/GitHub/Bluetooth/src/main.cpp \
  /usr/include/stdc-predef.h \
- /home/naneless/Documents/GitHub/Bluetooth/include/BluetoothList.h \
  /home/naneless/Documents/GitHub/Bluetooth/include/Bluetooth.h \
- /usr/include/x86_64-linux-gnu/qt6/QtBluetooth/qbluetoothlocaldevice.h \
+ /home/naneless/Documents/GitHub/Bluetooth/include/Device.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtBluetooth/qbluetoothdeviceinfo.h \
  /usr/include/x86_64-linux-gnu/qt6/QtBluetooth/qtbluetoothglobal.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qglobal.h \
  /usr/include/c++/14/type_traits \
@@ -216,9 +216,14 @@ CMakeFiles/Bluetooth.dir/src/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h \
  /usr/include/x86_64-linux-gnu/qt6/QtBluetooth/qtbluetooth-config.h \
  /usr/include/x86_64-linux-gnu/qt6/QtBluetooth/qtbluetoothexports.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtBluetooth/QBluetoothUuid \
+ /usr/include/x86_64-linux-gnu/qt6/QtBluetooth/qbluetoothuuid.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QtGlobal \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qglobal.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QMetaType \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qmetatype.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearray.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qrefcount.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qnamespace.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcompare.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcomparehelpers.h \
@@ -250,22 +255,25 @@ CMakeFiles/Bluetooth.dir/src/main.cpp.o: \
  /usr/include/c++/14/bits/move_only_function.h \
  /usr/include/c++/14/bits/mofunc_impl.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtmetamacros.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs_impl.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qfunctionaltools_impl.h \
- /usr/include/c++/14/memory /usr/include/c++/14/bits/stl_tempbuf.h \
- /usr/include/c++/14/bits/stl_raw_storage_iter.h \
- /usr/include/c++/14/bits/align.h /usr/include/c++/14/bits/unique_ptr.h \
- /usr/include/c++/14/ostream /usr/include/c++/14/ios \
- /usr/include/c++/14/iosfwd /usr/include/c++/14/bits/stringfwd.h \
- /usr/include/c++/14/bits/postypes.h /usr/include/c++/14/cwchar \
- /usr/include/wchar.h /usr/lib/gcc/x86_64-linux-gnu/14/include/stdarg.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydata.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qpair.h /usr/include/string.h \
+ /usr/include/strings.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydatapointer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydataops.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainertools_impl.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qxptype_traits.h \
+ /usr/include/c++/14/cstring /usr/include/c++/14/iterator \
+ /usr/include/c++/14/bits/stream_iterator.h /usr/include/c++/14/iosfwd \
+ /usr/include/c++/14/bits/stringfwd.h /usr/include/c++/14/bits/postypes.h \
+ /usr/include/c++/14/cwchar /usr/include/wchar.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
- /usr/include/c++/14/bits/char_traits.h \
- /usr/include/c++/14/bits/localefwd.h \
+ /usr/include/c++/14/bits/streambuf_iterator.h \
+ /usr/include/c++/14/streambuf /usr/include/c++/14/bits/localefwd.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/c++locale.h \
  /usr/include/c++/14/clocale /usr/include/locale.h \
  /usr/include/x86_64-linux-gnu/bits/locale.h /usr/include/c++/14/cctype \
@@ -274,6 +282,7 @@ CMakeFiles/Bluetooth.dir/src/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/14/bits/atomic_word.h \
  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
  /usr/include/c++/14/bits/locale_classes.h /usr/include/c++/14/string \
+ /usr/include/c++/14/bits/char_traits.h \
  /usr/include/c++/14/bits/ostream_insert.h \
  /usr/include/c++/14/bits/cxxabi_forced.h \
  /usr/include/c++/14/bits/basic_string.h /usr/include/c++/14/string_view \
@@ -290,13 +299,15 @@ CMakeFiles/Bluetooth.dir/src/main.cpp.o: \
  /usr/include/c++/14/bits/locale_classes.tcc \
  /usr/include/c++/14/system_error \
  /usr/include/x86_64-linux-gnu/c++/14/bits/error_constants.h \
- /usr/include/c++/14/stdexcept /usr/include/c++/14/streambuf \
- /usr/include/c++/14/bits/streambuf.tcc \
+ /usr/include/c++/14/stdexcept /usr/include/c++/14/bits/streambuf.tcc \
+ /usr/include/c++/14/memory /usr/include/c++/14/bits/stl_tempbuf.h \
+ /usr/include/c++/14/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/14/bits/align.h /usr/include/c++/14/bits/unique_ptr.h \
+ /usr/include/c++/14/ostream /usr/include/c++/14/ios \
  /usr/include/c++/14/bits/basic_ios.h \
  /usr/include/c++/14/bits/locale_facets.h /usr/include/c++/14/cwctype \
  /usr/include/wctype.h /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/ctype_base.h \
- /usr/include/c++/14/bits/streambuf_iterator.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/ctype_inline.h \
  /usr/include/c++/14/bits/locale_facets.tcc \
  /usr/include/c++/14/bits/basic_ios.tcc /usr/include/c++/14/format \
@@ -323,21 +334,7 @@ CMakeFiles/Bluetooth.dir/src/main.cpp.o: \
  /usr/include/c++/14/bits/ranges_uninitialized.h \
  /usr/include/c++/14/bits/out_ptr.h \
  /usr/include/c++/14/pstl/glue_memory_defs.h \
- /usr/include/c++/14/pstl/execution_defs.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qstring.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qchar.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringview.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearray.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qrefcount.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydata.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qpair.h /usr/include/string.h \
- /usr/include/strings.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydatapointer.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydataops.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainertools_impl.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qxptype_traits.h \
- /usr/include/c++/14/cstring /usr/include/c++/14/iterator \
- /usr/include/c++/14/bits/stream_iterator.h /usr/include/c++/14/algorithm \
+ /usr/include/c++/14/pstl/execution_defs.h /usr/include/c++/14/algorithm \
  /usr/include/c++/14/bits/ranges_algo.h \
  /usr/include/c++/14/pstl/glue_algorithm_defs.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/q20functional.h \
@@ -346,6 +343,14 @@ CMakeFiles/Bluetooth.dir/src/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearrayview.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringfwd.h \
  /usr/include/c++/14/stdlib.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatastream.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qscopedpointer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevicebase.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qfloat16.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qhashfunctions.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qstring.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qchar.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringview.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringliteral.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringalgorithms.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qlatin1stringview.h \
@@ -355,50 +360,25 @@ CMakeFiles/Bluetooth.dir/src/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringbuilder.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringconverter.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringconverter_base.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qlist.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qhashfunctions.h \
  /usr/include/c++/14/numeric /usr/include/c++/14/bits/stl_numeric.h \
  /usr/include/c++/14/pstl/glue_numeric_defs.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qiterator.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearraylist.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringlist.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qalgorithms.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringmatcher.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qscopedpointer.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qmetatype.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatastream.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevicebase.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qfloat16.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmath.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qalgorithms.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qiterable.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmetacontainer.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainerinfo.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtaggedpointer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs_impl.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qfunctionaltools_impl.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qscopeguard.h \
  /usr/include/c++/14/list /usr/include/c++/14/bits/stl_list.h \
  /usr/include/c++/14/bits/list.tcc /usr/include/c++/14/map \
  /usr/include/c++/14/bits/stl_tree.h /usr/include/c++/14/bits/stl_map.h \
  /usr/include/c++/14/bits/stl_multimap.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject_impl.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qbindingstorage.h \
- /usr/include/c++/14/chrono /usr/include/c++/14/bits/chrono.h \
- /usr/include/c++/14/ratio /usr/include/c++/14/sstream \
- /usr/include/c++/14/istream /usr/include/c++/14/bits/istream.tcc \
- /usr/include/c++/14/bits/sstream.tcc \
- /usr/include/c++/14/bits/chrono_io.h /usr/include/c++/14/iomanip \
- /usr/include/c++/14/bits/quoted_string.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qlist.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qstring.h \
- /usr/include/x86_64-linux-gnu/qt6/QtBluetooth/QBluetoothHostInfo \
- /usr/include/x86_64-linux-gnu/qt6/QtBluetooth/qbluetoothhostinfo.h \
- /usr/include/x86_64-linux-gnu/qt6/QtBluetooth/QBluetoothAddress \
- /usr/include/x86_64-linux-gnu/qt6/QtBluetooth/qbluetoothaddress.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QByteArray \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearray.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QMetaType \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qmetatype.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QUuid \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/quuid.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qendian.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QDebug \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtextstream.h \
@@ -406,65 +386,550 @@ CMakeFiles/Bluetooth.dir/src/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedpointer.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedpointer_impl.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qmetatype.h \
+ /usr/include/c++/14/chrono /usr/include/c++/14/bits/chrono.h \
+ /usr/include/c++/14/ratio /usr/include/c++/14/sstream \
+ /usr/include/c++/14/istream /usr/include/c++/14/bits/istream.tcc \
+ /usr/include/c++/14/bits/sstream.tcc \
+ /usr/include/c++/14/bits/chrono_io.h /usr/include/c++/14/iomanip \
+ /usr/include/c++/14/bits/quoted_string.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qlist.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qiterator.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearraylist.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringlist.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringmatcher.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmap.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata_impl.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qset.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qhash.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h \
- /usr/include/x86_64-linux-gnu/qt6/QtBluetooth/qbluetoothdeviceinfo.h \
- /usr/include/x86_64-linux-gnu/qt6/QtBluetooth/QBluetoothUuid \
- /usr/include/x86_64-linux-gnu/qt6/QtBluetooth/qbluetoothuuid.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QtGlobal \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qglobal.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QUuid \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/quuid.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qendian.h \
- /usr/include/x86_64-linux-gnu/qt6/QtBluetooth/qbluetoothdevicediscoveryagent.h \
- /usr/include/x86_64-linux-gnu/qt6/QtBluetooth/QBluetoothDeviceInfo \
- /usr/include/x86_64-linux-gnu/qt6/QtBluetooth/qbluetoothdeviceinfo.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qmap.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qtmetamacros.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qdir.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qdirlisting.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qfiledevice.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevice.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatetime.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qcalendar.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qlocale.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtDBus/qdbusextratypes.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtDBus/qtdbusglobal.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/q23utility.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject_impl.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qbindingstorage.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtDBus/qtdbusexports.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtDBus/qdbusinterface.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtDBus/qdbusabstractinterface.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtDBus/qdbusmessage.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtDBus/qdbuserror.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtDBus/qdbusextratypes.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtDBus/qdbusconnection.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtDBus/qdbuspendingcall.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QRegularExpression \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qregularexpression.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtDBus/QtDBus \
+ /usr/include/x86_64-linux-gnu/qt6/QtDBus/QtDBusDepends \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QtCore \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QtCoreDepends \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/q20algorithm.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/q20chrono.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/q20functional.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/q20iterator.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/q20map.h \
+ /usr/include/c++/14/memory_resource /usr/include/c++/14/shared_mutex \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/q20memory.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/q20vector.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/q23functional.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/q23utility.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/q26numeric.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractanimation.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstracteventdispatcher.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qeventloop.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qdeadlinetimer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qelapsedtimer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractitemmodel.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractnativeeventfilter.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractproxymodel.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractitemmodel.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qalgorithms.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qanimationgroup.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractanimation.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qanystringview.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qapplicationstatic.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QMutex \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qmutex.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtsan_impl.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreevent.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qnativeinterface.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication_platform.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydata.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydataops.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydatapointer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qassert.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qassociativeiterable.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qatomic.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qatomicscopedvaluerollback.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qbasictimer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qbindingstorage.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qbitarray.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qbuffer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevice.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearray.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearrayalgorithms.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearraylist.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearraymatcher.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/q20algorithm.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearrayview.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcache.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcalendar.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qlocale.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcborarray.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcborvalue.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcborcommon.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatetime.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcalendar.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qregularexpression.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qurl.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/quuid.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcborcommon.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcbormap.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcborstream.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcborstreamreader.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcborstreamwriter.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcborstreamreader.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcborstreamwriter.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcborvalue.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qchar.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qchronotimer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qproperty.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qpropertyprivate.h \
+ /usr/include/c++/14/source_location \
+ /usr/include/c++/14/experimental/source_location \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qbasictimer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcollator.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcommandlineoption.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcommandlineparser.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcommandlineoption.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcompare.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcompilerdetection.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qconcatenatetablesproxymodel.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qconstructormacros.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainerfwd.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainerinfo.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontiguouscache.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreevent.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcryptographichash.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qspan.h \
+ /usr/include/c++/14/cassert \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/q20iterator.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qdarwinhelpers.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatastream.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatetime.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qdeadlinetimer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qdir.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qdirlisting.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qfiledevice.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfile.h \
  /usr/include/c++/14/filesystem /usr/include/c++/14/bits/fs_fwd.h \
  /usr/include/c++/14/bits/fs_path.h /usr/include/c++/14/codecvt \
  /usr/include/c++/14/bits/fs_dir.h /usr/include/c++/14/bits/fs_ops.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfileinfo.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimezone.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qdiriterator.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qdir.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qdirlisting.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qeasingcurve.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qelapsedtimer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qendian.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qeventloop.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qexception.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qexceptionhandling.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qfactoryinterface.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qfile.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qfiledevice.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qfileinfo.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qfileselector.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QStringList \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringlist.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qfilesystemwatcher.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qflags.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qforeach.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qfunctionpointer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qfuture.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qfutureinterface.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qmutex.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qresultstore.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qfuture_impl.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qthreadpool.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qthread.h \
+ /usr/include/c++/14/future /usr/include/c++/14/mutex \
+ /usr/include/c++/14/bits/unique_lock.h \
+ /usr/include/c++/14/condition_variable /usr/include/c++/14/stop_token \
+ /usr/include/c++/14/bits/std_thread.h /usr/include/c++/14/semaphore \
+ /usr/include/c++/14/bits/semaphore_base.h \
+ /usr/include/c++/14/bits/atomic_timed_wait.h \
+ /usr/include/c++/14/bits/this_thread_sleep.h \
+ /usr/include/x86_64-linux-gnu/sys/time.h /usr/include/semaphore.h \
+ /usr/include/x86_64-linux-gnu/bits/semaphore.h \
+ /usr/include/c++/14/bits/atomic_futex.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qrunnable.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qexception.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qpromise.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qfutureinterface.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qfuturesynchronizer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qfuture.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qfuturewatcher.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qgenericatomic.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qglobalstatic.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qhash.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qhashfunctions.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qidentityproxymodel.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractproxymodel.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevice.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevicebase.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qitemselectionmodel.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qiterable.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qiterator.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonarray.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonvalue.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsondocument.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonobject.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonvalue.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qlatin1stringmatcher.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qlatin1stringview.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qlibrary.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qlibraryinfo.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qversionnumber.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtyperevision.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qline.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qpoint.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qlist.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qlocale.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qlockfile.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qloggingcategory.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qmalloc.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qmap.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qmargins.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qmath.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qmessageauthenticationcode.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcryptographichash.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qmetacontainer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qmetaobject.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qmimedata.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qmimedatabase.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qmimetype.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qmimetype.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qminmax.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qnamespace.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qnativeinterface.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qnumeric.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectcleanuphandler.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qoperatingsystemversion.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qoverload.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qpair.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qparallelanimationgroup.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qanimationgroup.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qpauseanimation.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qpermissions.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qplugin.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qpointer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonobject.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qpluginloader.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qlibrary.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qplugin.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qpoint.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qpointer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qprocess.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qprocessordetection.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qpromise.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qproperty.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qpropertyanimation.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariantanimation.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qeasingcurve.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qpropertyprivate.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qqueue.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qrandom.h \
+ /usr/include/c++/14/random /usr/include/c++/14/bits/random.h \
+ /usr/include/x86_64-linux-gnu/c++/14/bits/opt_random.h \
+ /usr/include/c++/14/bits/random.tcc \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qreadwritelock.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qrect.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qmargins.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qsize.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qrefcount.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qresource.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qresultstore.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qrunnable.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qsavefile.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qscopedpointer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qscopedvaluerollback.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qscopeguard.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qsemaphore.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qsequentialanimationgroup.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qsequentialiterable.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qset.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qsettings.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedmemory.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtipccommon.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedpointer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qsignalmapper.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qsimd.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/immintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/x86gprintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/ia32intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/adxintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/bmiintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/bmi2intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/cetintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/cldemoteintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/clflushoptintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/clwbintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/clzerointrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/cmpccxaddintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/enqcmdintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/fxsrintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/lzcntintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/lwpintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/movdirintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/mwaitintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/mwaitxintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/pconfigintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/popcntintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/pkuintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/prfchiintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/raointintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/rdseedintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/rtmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/serializeintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/sgxintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/tbmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/tsxldtrkintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/uintrintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/waitpkgintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/wbnoinvdintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/xsaveintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/xsavecintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/xsaveoptintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/xsavesintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/xtestintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/hresetintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/usermsrintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/mmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/xmmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/mm_malloc.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/emmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/pmmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/tmmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/smmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/wmmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/avxintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/avxvnniintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/avxifmaintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/avxvnniint8intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/avxvnniint16intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/avx2intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512fintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512erintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512pfintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512cdintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512vlintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512bwintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512dqintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512vlbwintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512vldqintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512ifmaintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512ifmavlintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512vbmiintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512vbmivlintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/avx5124fmapsintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/avx5124vnniwintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512vpopcntdqintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512vbmi2intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512vbmi2vlintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512vnniintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512vnnivlintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512vpopcntdqvlintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512bitalgintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512bitalgvlintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512vp2intersectintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512vp2intersectvlintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512fp16intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512fp16vlintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/shaintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/sm3intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/sha512intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/sm4intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/fmaintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/f16cintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/gfniintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/vaesintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/vpclmulqdqintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512bf16vlintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/avx512bf16intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/avxneconvertintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/amxtileintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/amxint8intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/amxbf16intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/amxcomplexintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/prfchwintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/keylockerintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/amxfp16intrin.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qsize.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qsocketnotifier.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qsortfilterproxymodel.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qspan.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qstack.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qstandardpaths.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qstaticlatin1stringmatcher.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qlatin1stringmatcher.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qstorageinfo.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qstring.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringalgorithms.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringbuilder.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringconverter.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringfwd.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringlistmodel.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringliteral.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringmatcher.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringtokenizer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringview.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qswap.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qsysinfo.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qsystemdetection.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qsystemsemaphore.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtaggedpointer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtclasshelpermacros.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtconfiginclude.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtconfigmacros.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtcoreversion.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtdeprecationmarkers.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtemporarydir.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtemporaryfile.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtenvironmentvariables.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtextboundaryfinder.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtextstream.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qthread.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qthreadpool.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qthreadstorage.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimeline.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimezone.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtipccommon.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtmetamacros.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtnoop.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtpreprocessorsupport.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtranslator.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtransposeproxymodel.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtresource.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtsymbolmacros.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qttranslation.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qttypetraits.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtversion.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtversionchecks.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtypeinfo.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtyperevision.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtypes.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qurl.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qurlquery.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qutf8stringview.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariantanimation.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qvarianthash.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QHash \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariantlist.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariantmap.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QMap \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qvector.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qversionnumber.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qwaitcondition.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QDeadlineTimer \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qwineventnotifier.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qxmlstream.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qxpfunctional.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/q23functional.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qyieldcpu.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtDBus/qtdbusglobal.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtDBus/qdbusabstractadaptor.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtDBus/qdbusabstractinterface.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtDBus/qdbusargument.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtDBus/qdbusconnection.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtDBus/qdbusconnectioninterface.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtDBus/qdbusreply.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtDBus/qdbuspendingreply.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtDBus/qdbusargument.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtDBus/qdbuscontext.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtDBus/qdbuserror.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtDBus/qdbusextratypes.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtDBus/qdbusinterface.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtDBus/qdbusmessage.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtDBus/qdbusmetatype.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtDBus/qdbuspendingcall.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtDBus/qdbuspendingreply.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtDBus/qdbusreply.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtDBus/qdbusserver.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtDBus/qdbusservicewatcher.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtDBus/qdbusunixfiledescriptor.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtDBus/qdbusvirtualobject.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtDBus/qtdbusversion.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtBluetooth/qbluetoothdevicediscoveryagent.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtBluetooth/QBluetoothDeviceInfo \
+ /usr/include/x86_64-linux-gnu/qt6/QtBluetooth/qbluetoothdeviceinfo.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtBluetooth/QBluetoothAddress \
+ /usr/include/x86_64-linux-gnu/qt6/QtBluetooth/qbluetoothaddress.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QByteArray \
+ /usr/include/x86_64-linux-gnu/qt6/QtBluetooth/qbluetoothlocaldevice.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtBluetooth/QBluetoothHostInfo \
+ /usr/include/x86_64-linux-gnu/qt6/QtBluetooth/qbluetoothhostinfo.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtDBus/qdbusconnection.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qdir.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qmap.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
+ /home/naneless/Documents/GitHub/Bluetooth/include/BluetoothList.h \
  /home/naneless/Documents/GitHub/Bluetooth/include/BluetoothItem.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/QMouseEvent \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qevent.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtgui-config.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiexports.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qeventpoint.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qvector2d.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qvectornd.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qrect.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qpointingdevice.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qinputdevice.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qscreen.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QRect \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QSize \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QSizeF \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/QTransform \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qpolygon.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qregion.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qline.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qscreen_platform.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qinputmethod.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication_platform.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qkeysequence.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgets-config.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsexports.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayout.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayoutitem.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qrect.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qmargins.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qsize.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qpoint.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgridlayout.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlabel.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qaction.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qkeysequence.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qicon.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixmap.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpaintdevice.h \
@@ -474,12 +939,6 @@ CMakeFiles/Bluetooth.dir/src/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qimage.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixelformat.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qpolygon.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qregion.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qspan.h \
- /usr/include/c++/14/cassert \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/q20iterator.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qline.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpalette.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qbrush.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qfont.h \
@@ -489,24 +948,43 @@ CMakeFiles/Bluetooth.dir/src/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qbitmap.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpicture.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextdocument.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qurl.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qscrollarea.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractscrollarea.h \
+ /home/naneless/Documents/GitHub/Bluetooth/include/BluetoothListModel.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractitemmodel.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qlist.h \
+ /home/naneless/Documents/GitHub/Bluetooth/include/DeviceDelegate.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QStyledItemDelegate \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyleditemdelegate.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemdelegate.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyleoption.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractspinbox.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qvalidator.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qslider.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyle.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabbar.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qrubberband.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainter.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextoption.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h \
+ /home/naneless/Documents/GitHub/Bluetooth/include/DeviceSortFilterProxy.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qsortfilterproxymodel.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QListView \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlistview.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemview.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractscrollarea.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qitemselectionmodel.h \
  /home/naneless/Documents/GitHub/Bluetooth/include/LoadQSS.h \
  /usr/include/c++/14/iostream \
+ /usr/include/x86_64-linux-gnu/qt6/QtBluetooth/qbluetoothaddress.h \
+ /home/naneless/Documents/GitHub/Bluetooth/include/TopBar.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/QFontDatabase \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontdatabase.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qapplication.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreevent.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qdeadlinetimer.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qelapsedtimer.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qeventloop.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qnativeinterface.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication_platform.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qinputmethod.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication_platform.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainerfwd.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtDBus/qdbusreply.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qnamespace.h

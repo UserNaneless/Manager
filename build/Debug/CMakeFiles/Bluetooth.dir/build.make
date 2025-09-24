@@ -135,10 +135,66 @@ CMakeFiles/Bluetooth.dir/src/BluetoothList.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Bluetooth.dir/src/BluetoothList.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/naneless/Documents/GitHub/Bluetooth/src/BluetoothList.cpp -o CMakeFiles/Bluetooth.dir/src/BluetoothList.cpp.s
 
+CMakeFiles/Bluetooth.dir/src/BluetoothListModel.cpp.o: CMakeFiles/Bluetooth.dir/flags.make
+CMakeFiles/Bluetooth.dir/src/BluetoothListModel.cpp.o: /home/naneless/Documents/GitHub/Bluetooth/src/BluetoothListModel.cpp
+CMakeFiles/Bluetooth.dir/src/BluetoothListModel.cpp.o: CMakeFiles/Bluetooth.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/naneless/Documents/GitHub/Bluetooth/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Bluetooth.dir/src/BluetoothListModel.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Bluetooth.dir/src/BluetoothListModel.cpp.o -MF CMakeFiles/Bluetooth.dir/src/BluetoothListModel.cpp.o.d -o CMakeFiles/Bluetooth.dir/src/BluetoothListModel.cpp.o -c /home/naneless/Documents/GitHub/Bluetooth/src/BluetoothListModel.cpp
+
+CMakeFiles/Bluetooth.dir/src/BluetoothListModel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Bluetooth.dir/src/BluetoothListModel.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/naneless/Documents/GitHub/Bluetooth/src/BluetoothListModel.cpp > CMakeFiles/Bluetooth.dir/src/BluetoothListModel.cpp.i
+
+CMakeFiles/Bluetooth.dir/src/BluetoothListModel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Bluetooth.dir/src/BluetoothListModel.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/naneless/Documents/GitHub/Bluetooth/src/BluetoothListModel.cpp -o CMakeFiles/Bluetooth.dir/src/BluetoothListModel.cpp.s
+
+CMakeFiles/Bluetooth.dir/src/Device.cpp.o: CMakeFiles/Bluetooth.dir/flags.make
+CMakeFiles/Bluetooth.dir/src/Device.cpp.o: /home/naneless/Documents/GitHub/Bluetooth/src/Device.cpp
+CMakeFiles/Bluetooth.dir/src/Device.cpp.o: CMakeFiles/Bluetooth.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/naneless/Documents/GitHub/Bluetooth/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Bluetooth.dir/src/Device.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Bluetooth.dir/src/Device.cpp.o -MF CMakeFiles/Bluetooth.dir/src/Device.cpp.o.d -o CMakeFiles/Bluetooth.dir/src/Device.cpp.o -c /home/naneless/Documents/GitHub/Bluetooth/src/Device.cpp
+
+CMakeFiles/Bluetooth.dir/src/Device.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Bluetooth.dir/src/Device.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/naneless/Documents/GitHub/Bluetooth/src/Device.cpp > CMakeFiles/Bluetooth.dir/src/Device.cpp.i
+
+CMakeFiles/Bluetooth.dir/src/Device.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Bluetooth.dir/src/Device.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/naneless/Documents/GitHub/Bluetooth/src/Device.cpp -o CMakeFiles/Bluetooth.dir/src/Device.cpp.s
+
+CMakeFiles/Bluetooth.dir/src/DeviceDelegate.cpp.o: CMakeFiles/Bluetooth.dir/flags.make
+CMakeFiles/Bluetooth.dir/src/DeviceDelegate.cpp.o: /home/naneless/Documents/GitHub/Bluetooth/src/DeviceDelegate.cpp
+CMakeFiles/Bluetooth.dir/src/DeviceDelegate.cpp.o: CMakeFiles/Bluetooth.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/naneless/Documents/GitHub/Bluetooth/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Bluetooth.dir/src/DeviceDelegate.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Bluetooth.dir/src/DeviceDelegate.cpp.o -MF CMakeFiles/Bluetooth.dir/src/DeviceDelegate.cpp.o.d -o CMakeFiles/Bluetooth.dir/src/DeviceDelegate.cpp.o -c /home/naneless/Documents/GitHub/Bluetooth/src/DeviceDelegate.cpp
+
+CMakeFiles/Bluetooth.dir/src/DeviceDelegate.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Bluetooth.dir/src/DeviceDelegate.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/naneless/Documents/GitHub/Bluetooth/src/DeviceDelegate.cpp > CMakeFiles/Bluetooth.dir/src/DeviceDelegate.cpp.i
+
+CMakeFiles/Bluetooth.dir/src/DeviceDelegate.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Bluetooth.dir/src/DeviceDelegate.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/naneless/Documents/GitHub/Bluetooth/src/DeviceDelegate.cpp -o CMakeFiles/Bluetooth.dir/src/DeviceDelegate.cpp.s
+
+CMakeFiles/Bluetooth.dir/src/TopBar.cpp.o: CMakeFiles/Bluetooth.dir/flags.make
+CMakeFiles/Bluetooth.dir/src/TopBar.cpp.o: /home/naneless/Documents/GitHub/Bluetooth/src/TopBar.cpp
+CMakeFiles/Bluetooth.dir/src/TopBar.cpp.o: CMakeFiles/Bluetooth.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/naneless/Documents/GitHub/Bluetooth/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Bluetooth.dir/src/TopBar.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Bluetooth.dir/src/TopBar.cpp.o -MF CMakeFiles/Bluetooth.dir/src/TopBar.cpp.o.d -o CMakeFiles/Bluetooth.dir/src/TopBar.cpp.o -c /home/naneless/Documents/GitHub/Bluetooth/src/TopBar.cpp
+
+CMakeFiles/Bluetooth.dir/src/TopBar.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Bluetooth.dir/src/TopBar.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/naneless/Documents/GitHub/Bluetooth/src/TopBar.cpp > CMakeFiles/Bluetooth.dir/src/TopBar.cpp.i
+
+CMakeFiles/Bluetooth.dir/src/TopBar.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Bluetooth.dir/src/TopBar.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/naneless/Documents/GitHub/Bluetooth/src/TopBar.cpp -o CMakeFiles/Bluetooth.dir/src/TopBar.cpp.s
+
 CMakeFiles/Bluetooth.dir/src/main.cpp.o: CMakeFiles/Bluetooth.dir/flags.make
 CMakeFiles/Bluetooth.dir/src/main.cpp.o: /home/naneless/Documents/GitHub/Bluetooth/src/main.cpp
 CMakeFiles/Bluetooth.dir/src/main.cpp.o: CMakeFiles/Bluetooth.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/naneless/Documents/GitHub/Bluetooth/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Bluetooth.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/naneless/Documents/GitHub/Bluetooth/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Bluetooth.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Bluetooth.dir/src/main.cpp.o -MF CMakeFiles/Bluetooth.dir/src/main.cpp.o.d -o CMakeFiles/Bluetooth.dir/src/main.cpp.o -c /home/naneless/Documents/GitHub/Bluetooth/src/main.cpp
 
 CMakeFiles/Bluetooth.dir/src/main.cpp.i: cmake_force
@@ -155,6 +211,10 @@ Bluetooth_OBJECTS = \
 "CMakeFiles/Bluetooth.dir/src/Bluetooth.cpp.o" \
 "CMakeFiles/Bluetooth.dir/src/BluetoothItem.cpp.o" \
 "CMakeFiles/Bluetooth.dir/src/BluetoothList.cpp.o" \
+"CMakeFiles/Bluetooth.dir/src/BluetoothListModel.cpp.o" \
+"CMakeFiles/Bluetooth.dir/src/Device.cpp.o" \
+"CMakeFiles/Bluetooth.dir/src/DeviceDelegate.cpp.o" \
+"CMakeFiles/Bluetooth.dir/src/TopBar.cpp.o" \
 "CMakeFiles/Bluetooth.dir/src/main.cpp.o"
 
 # External object files for target Bluetooth
@@ -164,6 +224,10 @@ Bluetooth: CMakeFiles/Bluetooth.dir/Bluetooth_autogen/mocs_compilation.cpp.o
 Bluetooth: CMakeFiles/Bluetooth.dir/src/Bluetooth.cpp.o
 Bluetooth: CMakeFiles/Bluetooth.dir/src/BluetoothItem.cpp.o
 Bluetooth: CMakeFiles/Bluetooth.dir/src/BluetoothList.cpp.o
+Bluetooth: CMakeFiles/Bluetooth.dir/src/BluetoothListModel.cpp.o
+Bluetooth: CMakeFiles/Bluetooth.dir/src/Device.cpp.o
+Bluetooth: CMakeFiles/Bluetooth.dir/src/DeviceDelegate.cpp.o
+Bluetooth: CMakeFiles/Bluetooth.dir/src/TopBar.cpp.o
 Bluetooth: CMakeFiles/Bluetooth.dir/src/main.cpp.o
 Bluetooth: CMakeFiles/Bluetooth.dir/build.make
 Bluetooth: CMakeFiles/Bluetooth.dir/compiler_depend.ts
@@ -172,11 +236,11 @@ Bluetooth: /usr/lib/x86_64-linux-gnu/libQt6Bluetooth.so.6.8.2
 Bluetooth: /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.8.2
 Bluetooth: /usr/lib/x86_64-linux-gnu/libGLX.so
 Bluetooth: /usr/lib/x86_64-linux-gnu/libOpenGL.so
-Bluetooth: /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.8.2
 Bluetooth: /usr/lib/x86_64-linux-gnu/libQt6DBus.so.6.8.2
+Bluetooth: /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.8.2
 Bluetooth: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.8.2
 Bluetooth: CMakeFiles/Bluetooth.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/naneless/Documents/GitHub/Bluetooth/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Bluetooth"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/naneless/Documents/GitHub/Bluetooth/build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable Bluetooth"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Bluetooth.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

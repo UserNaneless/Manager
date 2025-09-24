@@ -251,6 +251,102 @@ src/BluetoothList.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Bluetooth.dir/build.make CMakeFiles/Bluetooth.dir/src/BluetoothList.cpp.s
 .PHONY : src/BluetoothList.cpp.s
 
+src/BluetoothListModel.o: src/BluetoothListModel.cpp.o
+.PHONY : src/BluetoothListModel.o
+
+# target to build an object file
+src/BluetoothListModel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Bluetooth.dir/build.make CMakeFiles/Bluetooth.dir/src/BluetoothListModel.cpp.o
+.PHONY : src/BluetoothListModel.cpp.o
+
+src/BluetoothListModel.i: src/BluetoothListModel.cpp.i
+.PHONY : src/BluetoothListModel.i
+
+# target to preprocess a source file
+src/BluetoothListModel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Bluetooth.dir/build.make CMakeFiles/Bluetooth.dir/src/BluetoothListModel.cpp.i
+.PHONY : src/BluetoothListModel.cpp.i
+
+src/BluetoothListModel.s: src/BluetoothListModel.cpp.s
+.PHONY : src/BluetoothListModel.s
+
+# target to generate assembly for a file
+src/BluetoothListModel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Bluetooth.dir/build.make CMakeFiles/Bluetooth.dir/src/BluetoothListModel.cpp.s
+.PHONY : src/BluetoothListModel.cpp.s
+
+src/Device.o: src/Device.cpp.o
+.PHONY : src/Device.o
+
+# target to build an object file
+src/Device.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Bluetooth.dir/build.make CMakeFiles/Bluetooth.dir/src/Device.cpp.o
+.PHONY : src/Device.cpp.o
+
+src/Device.i: src/Device.cpp.i
+.PHONY : src/Device.i
+
+# target to preprocess a source file
+src/Device.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Bluetooth.dir/build.make CMakeFiles/Bluetooth.dir/src/Device.cpp.i
+.PHONY : src/Device.cpp.i
+
+src/Device.s: src/Device.cpp.s
+.PHONY : src/Device.s
+
+# target to generate assembly for a file
+src/Device.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Bluetooth.dir/build.make CMakeFiles/Bluetooth.dir/src/Device.cpp.s
+.PHONY : src/Device.cpp.s
+
+src/DeviceDelegate.o: src/DeviceDelegate.cpp.o
+.PHONY : src/DeviceDelegate.o
+
+# target to build an object file
+src/DeviceDelegate.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Bluetooth.dir/build.make CMakeFiles/Bluetooth.dir/src/DeviceDelegate.cpp.o
+.PHONY : src/DeviceDelegate.cpp.o
+
+src/DeviceDelegate.i: src/DeviceDelegate.cpp.i
+.PHONY : src/DeviceDelegate.i
+
+# target to preprocess a source file
+src/DeviceDelegate.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Bluetooth.dir/build.make CMakeFiles/Bluetooth.dir/src/DeviceDelegate.cpp.i
+.PHONY : src/DeviceDelegate.cpp.i
+
+src/DeviceDelegate.s: src/DeviceDelegate.cpp.s
+.PHONY : src/DeviceDelegate.s
+
+# target to generate assembly for a file
+src/DeviceDelegate.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Bluetooth.dir/build.make CMakeFiles/Bluetooth.dir/src/DeviceDelegate.cpp.s
+.PHONY : src/DeviceDelegate.cpp.s
+
+src/TopBar.o: src/TopBar.cpp.o
+.PHONY : src/TopBar.o
+
+# target to build an object file
+src/TopBar.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Bluetooth.dir/build.make CMakeFiles/Bluetooth.dir/src/TopBar.cpp.o
+.PHONY : src/TopBar.cpp.o
+
+src/TopBar.i: src/TopBar.cpp.i
+.PHONY : src/TopBar.i
+
+# target to preprocess a source file
+src/TopBar.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Bluetooth.dir/build.make CMakeFiles/Bluetooth.dir/src/TopBar.cpp.i
+.PHONY : src/TopBar.cpp.i
+
+src/TopBar.s: src/TopBar.cpp.s
+.PHONY : src/TopBar.s
+
+# target to generate assembly for a file
+src/TopBar.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Bluetooth.dir/build.make CMakeFiles/Bluetooth.dir/src/TopBar.cpp.s
+.PHONY : src/TopBar.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -298,6 +394,18 @@ help:
 	@echo "... src/BluetoothList.o"
 	@echo "... src/BluetoothList.i"
 	@echo "... src/BluetoothList.s"
+	@echo "... src/BluetoothListModel.o"
+	@echo "... src/BluetoothListModel.i"
+	@echo "... src/BluetoothListModel.s"
+	@echo "... src/Device.o"
+	@echo "... src/Device.i"
+	@echo "... src/Device.s"
+	@echo "... src/DeviceDelegate.o"
+	@echo "... src/DeviceDelegate.i"
+	@echo "... src/DeviceDelegate.s"
+	@echo "... src/TopBar.o"
+	@echo "... src/TopBar.i"
+	@echo "... src/TopBar.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

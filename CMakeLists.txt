@@ -10,7 +10,7 @@ set(CMAKE_AUTORCC ON)
 project(Bluetooth VERSION 0.1)
 
 
-find_package(Qt6 REQUIRED COMPONENTS Core Widgets Bluetooth)
+find_package(Qt6 COMPONENTS Core Widgets Bluetooth DBus Gui REQUIRED)
 
 file(GLOB_RECURSE SFILES src/*.cpp)
 file(GLOB_RECURSE HFILES include/*.h)
@@ -22,5 +22,7 @@ target_link_libraries(Bluetooth PRIVATE
     Qt6::Core
     Qt6::Widgets
     Qt6::Bluetooth
+    Qt6::DBus
+    Qt6::Gui
 )
 

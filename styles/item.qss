@@ -1,3 +1,21 @@
-QWidget {
-    //border: 2px solid black;
+BluetoothItem:hover {
+    border-bottom: 2px solid #5962D9;
 }
+
+
+BluetoothItem QPushButton {
+    border: 2px solid #5962D9;
+    color: #5962D9;
+    background: transparent;
+    border-radius: 10px;
+}
+
+BluetoothItem QPushButton:hover {
+    background: #5962D9;
+    color: white;
+}
+
+QLabel:hover {
+    border: none
+}
+

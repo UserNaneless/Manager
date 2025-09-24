@@ -6,14 +6,18 @@ Bluetooth: \
   CMakeFiles/Bluetooth.dir/src/Bluetooth.cpp.o \
   CMakeFiles/Bluetooth.dir/src/BluetoothItem.cpp.o \
   CMakeFiles/Bluetooth.dir/src/BluetoothList.cpp.o \
+  CMakeFiles/Bluetooth.dir/src/BluetoothListModel.cpp.o \
+  CMakeFiles/Bluetooth.dir/src/Device.cpp.o \
+  CMakeFiles/Bluetooth.dir/src/DeviceDelegate.cpp.o \
+  CMakeFiles/Bluetooth.dir/src/TopBar.cpp.o \
   CMakeFiles/Bluetooth.dir/src/main.cpp.o \
   /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.8.2 \
   /usr/lib/x86_64-linux-gnu/libQt6Bluetooth.so.6.8.2 \
   /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.8.2 \
   /usr/lib/x86_64-linux-gnu/libGLX.so \
   /usr/lib/x86_64-linux-gnu/libOpenGL.so \
-  /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.8.2 \
   /usr/lib/x86_64-linux-gnu/libQt6DBus.so.6.8.2 \
+  /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.8.2 \
   /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.8.2 \
   /usr/lib/gcc/x86_64-linux-gnu/14/libstdc++.so \
   /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libm.so \
@@ -41,22 +45,12 @@ Bluetooth: \
   /usr/lib/gcc/x86_64-linux-gnu/14/libgcc.a \
   /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o \
   /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o \
-  /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.8.2 \
   /lib/x86_64-linux-gnu/libm.so.6 \
-  /usr/lib/x86_64-linux-gnu/libQt6DBus.so.6.8.2 \
   /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.8.2 \
-  /lib/x86_64-linux-gnu/libicui18n.so.76 \
-  /lib/x86_64-linux-gnu/libicuuc.so.76 \
-  /lib/x86_64-linux-gnu/libglib-2.0.so.0 \
-  /lib/x86_64-linux-gnu/libz.so.1 \
-  /lib/x86_64-linux-gnu/libdouble-conversion.so.3 \
-  /lib/x86_64-linux-gnu/libb2.so.1 \
-  /lib/x86_64-linux-gnu/libpcre2-16.so.0 \
-  /lib/x86_64-linux-gnu/libzstd.so.1 \
-  /lib64/ld-linux-x86-64.so.2 \
   /lib/x86_64-linux-gnu/libEGL.so.1 \
   /lib/x86_64-linux-gnu/libfontconfig.so.1 \
   /lib/x86_64-linux-gnu/libX11.so.6 \
+  /lib/x86_64-linux-gnu/libglib-2.0.so.0 \
   /lib/x86_64-linux-gnu/libxkbcommon.so.0 \
   /usr/lib/x86_64-linux-gnu/libGLX.so \
   /usr/lib/x86_64-linux-gnu/libOpenGL.so \
@@ -64,7 +58,15 @@ Bluetooth: \
   /lib/x86_64-linux-gnu/libharfbuzz.so.0 \
   /lib/x86_64-linux-gnu/libmd4c.so.0 \
   /lib/x86_64-linux-gnu/libfreetype.so.6 \
+  /lib/x86_64-linux-gnu/libz.so.1 \
   /lib/x86_64-linux-gnu/libdbus-1.so.3 \
+  /lib/x86_64-linux-gnu/libicui18n.so.76 \
+  /lib/x86_64-linux-gnu/libicuuc.so.76 \
+  /lib/x86_64-linux-gnu/libdouble-conversion.so.3 \
+  /lib/x86_64-linux-gnu/libb2.so.1 \
+  /lib/x86_64-linux-gnu/libpcre2-16.so.0 \
+  /lib/x86_64-linux-gnu/libzstd.so.1 \
+  /lib64/ld-linux-x86-64.so.2 \
   /lib/x86_64-linux-gnu/libgssapi_krb5.so.2 \
   /lib/x86_64-linux-gnu/libbrotlidec.so.1 \
   /lib/x86_64-linux-gnu/libproxy.so.1 \
@@ -72,16 +74,16 @@ Bluetooth: \
   /lib/x86_64-linux-gnu/libproxy.so.1 \
   /usr/lib/x86_64-linux-gnu/libproxy.so.1 \
   /lib/x86_64-linux-gnu/libproxy.so.1 \
-  /lib/x86_64-linux-gnu/libicudata.so.76 \
-  /lib/x86_64-linux-gnu/libatomic.so.1 \
-  /lib/x86_64-linux-gnu/libpcre2-8.so.0 \
-  /lib/x86_64-linux-gnu/libgomp.so.1 \
   /lib/x86_64-linux-gnu/libGLdispatch.so.0 \
   /lib/x86_64-linux-gnu/libexpat.so.1 \
   /lib/x86_64-linux-gnu/libxcb.so.1 \
+  /lib/x86_64-linux-gnu/libatomic.so.1 \
+  /lib/x86_64-linux-gnu/libpcre2-8.so.0 \
   /lib/x86_64-linux-gnu/libgraphite2.so.3 \
   /lib/x86_64-linux-gnu/libbz2.so.1.0 \
   /lib/x86_64-linux-gnu/libsystemd.so.0 \
+  /lib/x86_64-linux-gnu/libicudata.so.76 \
+  /lib/x86_64-linux-gnu/libgomp.so.1 \
   /lib/x86_64-linux-gnu/libkrb5.so.3 \
   /lib/x86_64-linux-gnu/libk5crypto.so.3 \
   /lib/x86_64-linux-gnu/libcom_err.so.2 \
@@ -137,6 +139,14 @@ CMakeFiles/Bluetooth.dir/src/BluetoothItem.cpp.o:
 
 CMakeFiles/Bluetooth.dir/src/BluetoothList.cpp.o:
 
+CMakeFiles/Bluetooth.dir/src/BluetoothListModel.cpp.o:
+
+CMakeFiles/Bluetooth.dir/src/Device.cpp.o:
+
+CMakeFiles/Bluetooth.dir/src/DeviceDelegate.cpp.o:
+
+CMakeFiles/Bluetooth.dir/src/TopBar.cpp.o:
+
 CMakeFiles/Bluetooth.dir/src/main.cpp.o:
 
 /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.8.2:
@@ -149,9 +159,9 @@ CMakeFiles/Bluetooth.dir/src/main.cpp.o:
 
 /usr/lib/x86_64-linux-gnu/libOpenGL.so:
 
-/usr/lib/x86_64-linux-gnu/libQt6Network.so.6.8.2:
-
 /usr/lib/x86_64-linux-gnu/libQt6DBus.so.6.8.2:
+
+/usr/lib/x86_64-linux-gnu/libQt6Network.so.6.8.2:
 
 /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.8.2:
 
@@ -207,37 +217,17 @@ CMakeFiles/Bluetooth.dir/src/main.cpp.o:
 
 /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o:
 
-/usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.8.2:
-
 /lib/x86_64-linux-gnu/libm.so.6:
 
-/usr/lib/x86_64-linux-gnu/libQt6DBus.so.6.8.2:
-
 /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.8.2:
-
-/lib/x86_64-linux-gnu/libicui18n.so.76:
-
-/lib/x86_64-linux-gnu/libicuuc.so.76:
-
-/lib/x86_64-linux-gnu/libglib-2.0.so.0:
-
-/lib/x86_64-linux-gnu/libz.so.1:
-
-/lib/x86_64-linux-gnu/libdouble-conversion.so.3:
-
-/lib/x86_64-linux-gnu/libb2.so.1:
-
-/lib/x86_64-linux-gnu/libpcre2-16.so.0:
-
-/lib/x86_64-linux-gnu/libzstd.so.1:
-
-/lib64/ld-linux-x86-64.so.2:
 
 /lib/x86_64-linux-gnu/libEGL.so.1:
 
 /lib/x86_64-linux-gnu/libfontconfig.so.1:
 
 /lib/x86_64-linux-gnu/libX11.so.6:
+
+/lib/x86_64-linux-gnu/libglib-2.0.so.0:
 
 /lib/x86_64-linux-gnu/libxkbcommon.so.0:
 
@@ -253,7 +243,23 @@ CMakeFiles/Bluetooth.dir/src/main.cpp.o:
 
 /lib/x86_64-linux-gnu/libfreetype.so.6:
 
+/lib/x86_64-linux-gnu/libz.so.1:
+
 /lib/x86_64-linux-gnu/libdbus-1.so.3:
+
+/lib/x86_64-linux-gnu/libicui18n.so.76:
+
+/lib/x86_64-linux-gnu/libicuuc.so.76:
+
+/lib/x86_64-linux-gnu/libdouble-conversion.so.3:
+
+/lib/x86_64-linux-gnu/libb2.so.1:
+
+/lib/x86_64-linux-gnu/libpcre2-16.so.0:
+
+/lib/x86_64-linux-gnu/libzstd.so.1:
+
+/lib64/ld-linux-x86-64.so.2:
 
 /lib/x86_64-linux-gnu/libgssapi_krb5.so.2:
 
@@ -269,25 +275,25 @@ CMakeFiles/Bluetooth.dir/src/main.cpp.o:
 
 /lib/x86_64-linux-gnu/libproxy.so.1:
 
-/lib/x86_64-linux-gnu/libicudata.so.76:
-
-/lib/x86_64-linux-gnu/libatomic.so.1:
-
-/lib/x86_64-linux-gnu/libpcre2-8.so.0:
-
-/lib/x86_64-linux-gnu/libgomp.so.1:
-
 /lib/x86_64-linux-gnu/libGLdispatch.so.0:
 
 /lib/x86_64-linux-gnu/libexpat.so.1:
 
 /lib/x86_64-linux-gnu/libxcb.so.1:
 
+/lib/x86_64-linux-gnu/libatomic.so.1:
+
+/lib/x86_64-linux-gnu/libpcre2-8.so.0:
+
 /lib/x86_64-linux-gnu/libgraphite2.so.3:
 
 /lib/x86_64-linux-gnu/libbz2.so.1.0:
 
 /lib/x86_64-linux-gnu/libsystemd.so.0:
+
+/lib/x86_64-linux-gnu/libicudata.so.76:
+
+/lib/x86_64-linux-gnu/libgomp.so.1:
 
 /lib/x86_64-linux-gnu/libkrb5.so.3:
 

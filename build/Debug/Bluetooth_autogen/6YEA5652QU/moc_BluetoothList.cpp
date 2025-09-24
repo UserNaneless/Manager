@@ -61,7 +61,7 @@ Q_CONSTINIT static const uint qt_meta_data_ZN13BluetoothListE[] = {
 };
 
 Q_CONSTINIT const QMetaObject BluetoothList::staticMetaObject = { {
-    QMetaObject::SuperData::link<QScrollArea::staticMetaObject>(),
+    QMetaObject::SuperData::link<QListView::staticMetaObject>(),
     qt_meta_stringdata_ZN13BluetoothListE.offsetsAndSizes,
     qt_meta_data_ZN13BluetoothListE,
     qt_static_metacall,
@@ -92,12 +92,12 @@ void *BluetoothList::qt_metacast(const char *_clname)
     if (!_clname) return nullptr;
     if (!strcmp(_clname, qt_meta_stringdata_ZN13BluetoothListE.stringdata0))
         return static_cast<void*>(this);
-    return QScrollArea::qt_metacast(_clname);
+    return QListView::qt_metacast(_clname);
 }
 
 int BluetoothList::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = QScrollArea::qt_metacall(_c, _id, _a);
+    _id = QListView::qt_metacall(_c, _id, _a);
     return _id;
 }
 QT_WARNING_POP
