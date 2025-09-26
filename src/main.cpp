@@ -15,7 +15,7 @@ int main(int argc, char *argv[]) {
     QApplication app(argc, argv);
 
     QMainWindow w;
-    // w.setAttribute(Qt::WA_TranslucentBackground);
+    w.setAttribute(Qt::WA_TranslucentBackground);
 
     int fontId = QFontDatabase::addApplicationFont("/home/naneless/Documents/GitHub/Bluetooth/fonts/0xProtoNerdFont-Regular.ttf");
     QString family = QFontDatabase::applicationFontFamilies(fontId).at(0);

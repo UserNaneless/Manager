@@ -1,5 +1,6 @@
 BluetoothList {
     background: transparent;
+    border: none;
 }
 
 BluetoothList > QWidget > QWidget {

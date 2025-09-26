@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'Device.h'
 **
-** Created by: The Qt Meta Object Compiler version 68 (Qt 6.8.2)
+** Created by: The Qt Meta Object Compiler version 69 (Qt 6.9.2)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -17,8 +17,8 @@
 #include <QtCore/qxptype_traits.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'Device.h' doesn't include <QObject>."
-#elif Q_MOC_OUTPUT_REVISION != 68
-#error "This file was generated using the moc from 6.8.2. It"
+#elif Q_MOC_OUTPUT_REVISION != 69
+#error "This file was generated using the moc from 6.9.2. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -34,66 +34,41 @@ namespace {
 struct qt_meta_tag_ZN6DeviceE_t {};
 } // unnamed namespace
 
+template <> constexpr inline auto Device::qt_create_metaobjectdata<qt_meta_tag_ZN6DeviceE_t>()
+{
+    namespace QMC = QtMocConstants;
+    QtMocHelpers::StringRefStorage qt_stringData {
+        "Device",
+        "devicePropertiesChanged",
+        "",
+        "onPropertiesChanged",
+        "interface",
+        "QVariantMap",
+        "properties"
+    };
 
-#ifdef QT_MOC_HAS_STRINGDATA
-static constexpr auto qt_meta_stringdata_ZN6DeviceE = QtMocHelpers::stringData(
-    "Device",
-    "devicePropertiesChanged",
-    "",
-    "onPropertiesChanged",
-    "interface",
-    "QVariantMap",
-    "properties"
-);
-#else  // !QT_MOC_HAS_STRINGDATA
-#error "qtmochelpers.h not found or too old."
-#endif // !QT_MOC_HAS_STRINGDATA
-
-Q_CONSTINIT static const uint qt_meta_data_ZN6DeviceE[] = {
-
- // content:
-      12,       // revision
-       0,       // classname
-       0,    0, // classinfo
-       2,   14, // methods
-       0,    0, // properties
-       0,    0, // enums/sets
-       0,    0, // constructors
-       0,       // flags
-       1,       // signalCount
-
- // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   26,    2, 0x06,    1 /* Public */,
-
- // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       3,    3,   27,    2, 0x0a,    2 /* Public */,
-
- // signals: parameters
-    QMetaType::Void,
-
- // slots: parameters
-    QMetaType::Void, QMetaType::QString, 0x80000000 | 5, QMetaType::QStringList,    4,    6,    2,
-
-       0        // eod
-};
-
+    QtMocHelpers::UintData qt_methods {
+        // Signal 'devicePropertiesChanged'
+        QtMocHelpers::SignalData<void()>(1, 2, QMC::AccessPublic, QMetaType::Void),
+        // Slot 'onPropertiesChanged'
+        QtMocHelpers::SlotData<void(const QString &, const QVariantMap &, const QStringList &)>(3, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::QString, 4 }, { 0x80000000 | 5, 6 }, { QMetaType::QStringList, 2 },
+        }}),
+    };
+    QtMocHelpers::UintData qt_properties {
+    };
+    QtMocHelpers::UintData qt_enums {
+    };
+    return QtMocHelpers::metaObjectData<Device, qt_meta_tag_ZN6DeviceE_t>(QMC::MetaObjectFlag{}, qt_stringData,
+            qt_methods, qt_properties, qt_enums);
+}
 Q_CONSTINIT const QMetaObject Device::staticMetaObject = { {
     QMetaObject::SuperData::link<QObject::staticMetaObject>(),
-    qt_meta_stringdata_ZN6DeviceE.offsetsAndSizes,
-    qt_meta_data_ZN6DeviceE,
+    qt_staticMetaObjectStaticContent<qt_meta_tag_ZN6DeviceE_t>.stringdata,
+    qt_staticMetaObjectStaticContent<qt_meta_tag_ZN6DeviceE_t>.data,
     qt_static_metacall,
     nullptr,
-    qt_incomplete_metaTypeArray<qt_meta_tag_ZN6DeviceE_t,
-        // Q_OBJECT / Q_GADGET
-        QtPrivate::TypeAndForceComplete<Device, std::true_type>,
-        // method 'devicePropertiesChanged'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'onPropertiesChanged'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
-        QtPrivate::TypeAndForceComplete<const QVariantMap &, std::false_type>,
-        QtPrivate::TypeAndForceComplete<const QStringList &, std::false_type>
-    >,
+    qt_staticMetaObjectRelocatingContent<qt_meta_tag_ZN6DeviceE_t>.metaTypes,
     nullptr
 } };
 
@@ -108,14 +83,8 @@ void Device::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void
         }
     }
     if (_c == QMetaObject::IndexOfMethod) {
-        int *result = reinterpret_cast<int *>(_a[0]);
-        {
-            using _q_method_type = void (Device::*)();
-            if (_q_method_type _q_method = &Device::devicePropertiesChanged; *reinterpret_cast<_q_method_type *>(_a[1]) == _q_method) {
-                *result = 0;
-                return;
-            }
-        }
+        if (QtMocHelpers::indexOfMethod<void (Device::*)()>(_a, &Device::devicePropertiesChanged, 0))
+            return;
     }
 }
 
@@ -127,7 +96,7 @@ const QMetaObject *Device::metaObject() const
 void *Device::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_ZN6DeviceE.stringdata0))
+    if (!strcmp(_clname, qt_staticMetaObjectStaticContent<qt_meta_tag_ZN6DeviceE_t>.strings))
         return static_cast<void*>(this);
     return QObject::qt_metacast(_clname);
 }

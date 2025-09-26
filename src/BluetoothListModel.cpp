@@ -1,8 +1,14 @@
 #include "BluetoothListModel.h"
 
-BluetoothListModel::BluetoothListModel(QObject *parent) : QAbstractListModel(parent) {}
+BluetoothListModel::BluetoothListModel(Bluetooth *bt, QObject *parent) : QAbstractListModel(parent) {
+    this->bt = bt;
 
-void BluetoothListModel::setDevices(QList<Device *> &devices) {
+    setDevices(bt->getPairedDevices());
+
+    connect(bt, &Bluetooth::deviceDiscovered, this, &BluetoothListModel::addDevice);
+}
+
+void BluetoothListModel::setDevices(QList<Device *> devices) {
     beginResetModel();
     this->devices = devices;
     endResetModel();

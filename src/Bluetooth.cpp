@@ -4,10 +4,31 @@
 #include <qbluetoothdeviceinfo.h>
 #include <qbluetoothlocaldevice.h>
 #include <qcontainerfwd.h>
+#include <qdbusargument.h>
 #include <qdbusextratypes.h>
+#include <qdbusmetatype.h>
 #include <qdbusreply.h>
 #include <qdir.h>
 #include <string>
+
+Bluetooth::Bluetooth() {
+    qDBusRegisterMetaType<Properties>();
+
+    setupLocalDevice();
+
+    QDBusConnection::systemBus().connect(
+        "org.bluez",
+        "/",
+        "org.freedesktop.DBus.ObjectManager",
+        "InterfacesAdded",
+        this,
+        SLOT(onDeviceDiscovered(QDBusObjectPath, Properties)));
+}
+
+Bluetooth::~Bluetooth() {
+    if (scanning)
+        stopDeviceDiscovery();
+}
 
 bool Bluetooth::turnOnBluetooth() {
 
@@ -37,25 +58,9 @@ bool Bluetooth::turnOffBluetooth() {
     return true;
 }
 
-Bluetooth::Bluetooth() {
-    macRegex = QRegularExpression(macRegexString);
+QList<Device *> Bluetooth::getPairedDevices() {
 
-    setupLocalDevice();
-
-    // if (localDevice.isValid())
-    // localDeviceName = localDevice.name();
-}
-
-Bluetooth::~Bluetooth() {
-    for (auto device : devices) {
-        delete device;
-    }
-    // delete discoveryAgent;
-}
-
-QMap<QString, QBluetoothDeviceInfo> Bluetooth::getPairedDevices() {
-
-    QMap<QString, QBluetoothDeviceInfo> devices;
+    QList<Device *> devices;
 
     QDBusMessage msg = objectManager.call("GetManagedObjects");
 
@@ -91,9 +96,8 @@ QMap<QString, QBluetoothDeviceInfo> Bluetooth::getPairedDevices() {
         QVariantMap props = device.value();
 
         QBluetoothAddress addr = QBluetoothAddress(props.value("Address").toString());
-        devices[addr.toString()] = QBluetoothDeviceInfo(addr, props.value("Name").toString(), props.value("Class").toUInt());
         bool connected = props.value("Connected").toBool();
-        this->devices.append(new Device(path, QBluetoothDeviceInfo(addr, props.value("Name").toString(), props.value("Class").toUInt()), connected ? Device::DeviceType::Connected : Device::DeviceType::Paired));
+        devices.append(new Device(path, QBluetoothDeviceInfo(addr, props.value("Alias").toString(), props.value("Class").toUInt()), connected ? Device::DeviceType::Connected : Device::DeviceType::Paired));
     }
 
     std::cout << std::to_string(pairedDevices.size()) + " paired devices" << std::endl;
@@ -102,8 +106,38 @@ QMap<QString, QBluetoothDeviceInfo> Bluetooth::getPairedDevices() {
 }
 
 void Bluetooth::startDeviceDiscovery() {
-    // discoveryAgent->start();
+    if (!active)
+        return;
+
+    QDBusReply<void> reply = adapterManager.call("StartDiscovery");
+
+    if (!reply.isValid()) {
+        std::cout << reply.error().message().toStdString() << std::endl;
+        return;
+    }
     scanning = true;
+}
+
+void Bluetooth::stopDeviceDiscovery() {
+    if (!active)
+        return;
+
+    QDBusReply<void> reply = adapterManager.call("StopDiscovery");
+
+    if (!reply.isValid()) {
+        std::cout << reply.error().message().toStdString() << std::endl;
+        return;
+    }
+
+    scanning = false;
+}
+
+void Bluetooth::onDeviceDiscovered(const QDBusObjectPath &path, const Properties &props) {
+    std::cout << path.path().toStdString() << std::endl;
+    if (props.contains("org.bluez.Device1")) {
+        const auto &device = props["org.bluez.Device1"];
+        emit deviceDiscovered(new Device(path, QBluetoothDeviceInfo(QBluetoothAddress(device["Address"].toString()), device["Alias"].toString(), device["Class"].toUInt()), Device::DeviceType::Discovered));
+    }
 }
 
 void Bluetooth::connectDevice(const Device *device) {
@@ -116,10 +150,6 @@ void Bluetooth::connectDevice(const Device *device) {
         std::cout << reply.error().message().toStdString() << std::endl;
         return;
     }
-}
-
-void Bluetooth::disconnectDevice(const QBluetoothDeviceInfo &device) {
-    // localDevice.requestPairing(device.address(), QBluetoothLocalDevice::Unpaired);
 }
 
 void Bluetooth::setupLocalDevice() {
@@ -138,50 +168,4 @@ void Bluetooth::setupLocalDevice() {
     auto address = QBluetoothAddress(interface["Address"].toString());
 
     localDevice.setDevice(QDBusObjectPath("/org/bluez/hci0"), QBluetoothDeviceInfo(address, name, bluetoothClass));
-}
-
-void Bluetooth::deviceDiscovered(const QBluetoothDeviceInfo &device) {
-    std::cout << device.name().toStdString() << std::endl;
-    QString addr = device.address().toString();
-
-    // if (localDevice.connectedDevices().contains(device.address())) {
-    // connectedDevices[addr] = device;
-    // emit newConnectedDeviceAdded(device, DeviceType::Connected);
-    // return;
-    // }
-
-    // auto status = localDevice.pairingStatus(device.address());
-    // if (status == QBluetoothLocalDevice::Paired ||
-    // status == QBluetoothLocalDevice::AuthorizedPaired && !pairedDevices.contains(addr)) {
-    // return;
-    // }
-
-    if (!discoveredDevices.contains(addr)) {
-        discoveredDevices[addr] = device;
-        emit newDeviceAdded(device, Device::DeviceType::Discovered);
-    }
-}
-
-void Bluetooth::pairedDevicesChanged(const QBluetoothAddress &address, QBluetoothLocalDevice::Pairing pairing) {
-    if (pairing == QBluetoothLocalDevice::Paired || pairing == QBluetoothLocalDevice::AuthorizedPaired)
-        emit devicePaired(address);
-    else
-        std::cout << "Unpaired" << std::endl;
-}
-
-void Bluetooth::stopDeviceDiscovery() {
-    // discoveryAgent->stop();
-    scanning = false;
-}
-
-bool Bluetooth::isMAC(const QString &mac) {
-    return macRegex.match(mac).hasMatch();
-}
-
-void Bluetooth::handleDeviceConnection(const QBluetoothAddress &address) {
-    emit deviceConnected(address);
-}
-
-void Bluetooth::handleDeviceDisconnection(const QBluetoothAddress &address) {
-    emit deviceDisconnected(address);
 }
